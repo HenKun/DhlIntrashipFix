@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<config>
+	<modules>
+		<TK1_Dhlfix>
+			<active>true</active>
+			<codePool>community</codePool>
+			<depends>
+				<Dhl_Intraship />
+			</depends>
+		</TK1_Dhlfix>
+	</modules>
+</config>

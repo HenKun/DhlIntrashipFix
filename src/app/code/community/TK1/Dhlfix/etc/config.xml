@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<modules>
+		<TK1_Dhlfix>
+			<version>1.0.0</version>
+		</TK1_Dhlfix>
+	</modules>
+	<global>
+		<helpers>
+			<dhlfix>
+				<class>TK1_Dhlfix_Helper</class>
+			</dhlfix>
+			<intraship>
+			  <rewrite>
+				<data>TK1_Dhlfix_Helper_Data</data>
+			  </rewrite>
+			</intraship>
+		</helpers>
+	</global>
+</config>
