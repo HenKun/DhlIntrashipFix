@@ -1,8 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <config>
 	<modules>
 		<TK1_Dhlfix>
-			<version>1.0.0</version>
+			<version>1.1.0</version>
 		</TK1_Dhlfix>
 	</modules>
 	<global>
@@ -13,8 +12,19 @@
 			<intraship>
 			  <rewrite>
 				<data>TK1_Dhlfix_Helper_Data</data>
+				<pdf>TK1_Dhlfix_Helper_Pdf</pdf>
 			  </rewrite>
 			</intraship>
 		</helpers>
+		<blocks>
+			<dhlfix>
+				<class>TK1_Dhlfix_Block</class>
+			</dhlfix>
+			<intraship>
+			  <rewrite>
+				<adminhtml_sales_shipment_edit_form>TK1_Dhlfix_Block_Adminhtml_Sales_Shipment_Edit_Form</adminhtml_sales_shipment_edit_form>
+			  </rewrite>
+			</intraship>
+		</blocks>
 	</global>
 </config>
