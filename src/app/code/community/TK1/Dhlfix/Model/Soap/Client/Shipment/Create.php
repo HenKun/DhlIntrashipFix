@@ -16,7 +16,7 @@ class TK1_Dhlfix_Model_Soap_Client_Shipment_Create extends Dhl_Intraship_Model_S
 		// Introduces an additional check for a special "Packstation" format like "AccountId Packstation StationId". 
 		// Oddly enough this check is done when editing the address manually but not when the shipment is created without manual edit.
 		if (preg_match('/^(\d+)\s(packstation\s\d+)$/i', $address->getStreet(1), $match)) {
-					$address->setIdNumber($match[1])
+					$address->setIdNumber($match[1]);
                     $address->setStationId($match[2]);					
 		}
 		else
