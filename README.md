@@ -1,5 +1,7 @@
 # DhlIntrashipFix
 
+This Fix uses the deprecated "DHL Intraship" module by Netresearch. There is a new module called "DHL Versenden" by the same company that is not covered by these fixes. They may or may not be applicable to the new module.
+
 **Prevents transmission of telephone number to DHL**
 
 Module is build upon NetResearch DHL Intraship module and prevents sending customer telephone number to DHL.
