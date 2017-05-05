@@ -20,3 +20,8 @@ This fix corrects this and sets default values if no specific values are availab
 
 The edit form tries to recover packstation data from the street field. However, this is only done when edit form is called and not automatically.
 This module corrects this and also tries to recover packstation data from street format "AccountId Packstation StationId" automatically.
+
+**Allow "Packstation" in billing address**
+
+M2e Pro creates same billing and shipping address from amazon order. If these contain "Packstation" in sreet address, DHL_Intraship module prevents M2e from creating a Magento order since billing street must not contain "Packststation".
+Hint: Currently this fix also allows normal Magento frontend orders to contain "Packststaion" in billing street.

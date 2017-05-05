@@ -1,7 +1,7 @@
 <config>
 	<modules>
 		<TK1_Dhlfix>
-			<version>1.2.0</version>
+			<version>1.3.0</version>
 		</TK1_Dhlfix>
 	</modules>
 	<global>
@@ -35,6 +35,11 @@
 				<soap_client_shipment_create>TK1_Dhlfix_Model_Soap_Client_Shipment_Create</soap_client_shipment_create>
 			  </rewrite>
 			</intraship>
+			<sales>
+                <rewrite>
+                    <quote_address>TK1_Dhlfix_Model_Quote_Address</quote_address>
+                </rewrite>
+            </sales>
 		</models>
 	</global>
 </config>
