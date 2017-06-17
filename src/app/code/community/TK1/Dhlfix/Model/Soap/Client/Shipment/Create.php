@@ -22,6 +22,7 @@ class TK1_Dhlfix_Model_Soap_Client_Shipment_Create extends Dhl_Intraship_Model_S
 			}
 			elseif (preg_match('/^(\d+)$/i', $address->getCompany(), $match) && false !== stripos($address->getStreet(1), 'packstation'))
 			{
+				$address->setCompany("");
 				$address->setIdNumber($match[1]);
 				$address->setStationId($address->getStreet(1));		
 			}
